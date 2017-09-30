@@ -32,6 +32,7 @@ You may also need to create an init script to startup rdiffweb on reboot. One is
 On Debian 8 (Jessie) you need to create systemd file. The following was provided by contributors:
 
     sudo cp extras/systemd/rdiffweb.service /etc/systemd/system/
+    sudo systemctl enable rdiffweb.service 
     sudo service rdiffweb start
 
 By default, the web server is listening on port 8080 and is accessible via the following URL.
